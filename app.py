@@ -11,7 +11,7 @@ model = RobertaForSequenceClassification.from_pretrained("mindscope_model")
 model.eval()
 
 # Groq client - paste your key here
-client = Groq(api_key="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")
+client = Groq(api_key="GROQ_API_KEY")
 
 label_names = ['Depression 🍄', 'ADHD 💐', 'OCD 🐰', 'PTSD ☃️', 'Aspergers 🦀']
 label_contexts = {
