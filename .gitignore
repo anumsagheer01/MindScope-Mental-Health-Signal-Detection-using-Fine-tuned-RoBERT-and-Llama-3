@@ -1,0 +1,7 @@
+venv/
+.env
+*.env
+__pycache__/
+*.pyc
+mindscope_model/
+upload_model.py
