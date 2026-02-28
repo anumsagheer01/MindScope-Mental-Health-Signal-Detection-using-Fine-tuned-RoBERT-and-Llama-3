@@ -1,6 +1,6 @@
 ## Mental Health Signal Detection using Fine-tuned RoBERTa & Llama 3
 
-> *"Have you been talking to ChatGPT when you're low and feeling exhausted because it asks too many questions? For a change, meet MindScope."*
+> *Instead of talking to ChatGPT and feeling exhausted with the amount of follow up questions it asks, maybe click on this link?*
 
 [![HuggingFace Spaces](https://img.shields.io/badge/Live%20Demo-HuggingFace-pink)](https://huggingface.co/spaces/anumsagheer/mindscope)
 [![Model](https://img.shields.io/badge/Model-mindscope--model-purple)](https://huggingface.co/anumsagheer/mindscope-model)
