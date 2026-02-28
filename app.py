@@ -10,8 +10,18 @@ tokenizer = RobertaTokenizer.from_pretrained("anumsagheer/mindscope-model")
 model = RobertaForSequenceClassification.from_pretrained("anumsagheer/mindscope-model")
 model.eval()
 
+<<<<<<< HEAD
 # Groq client
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+=======
+<<<<<<< HEAD
+# Groq client - paste your key here
+client = Groq(api_key="GROQ_API_KEY")
+=======
+# Groq client
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+>>>>>>> a17223a (update UI, add SHAP explainability plots)
+>>>>>>> fa8a085526fe0caaac22ea4e97f2104e50dce2dc
 
 label_names = ['Depression', 'ADHD', 'OCD', 'PTSD', 'Aspergers']
 label_contexts = {
@@ -165,6 +175,35 @@ with gr.Blocks(
         neutral_hue="stone",
     )
 ) as demo:
+<<<<<<< HEAD
+
+    gr.HTML(header_html)
+
+    text_input = gr.Textbox(
+        lines=6,
+        placeholder="Write anything here, whatever's on your mind",
+        label="Input",
+        show_label=True,
+    )
+
+    submit_btn = gr.Button("Analyze", variant="primary", size="sm")
+
+    with gr.Row():
+        label_output = gr.Label(
+            num_top_classes=5,
+            label="Signal Detection"
+        )
+        groq_output = gr.Textbox(
+            label="Response",
+            interactive=False,
+            lines=4,
+        )
+
+    submit_btn.click(fn=predict, inputs=text_input, outputs=[label_output, groq_output])
+
+    gr.HTML(disclaimer_html)
+=======
+>>>>>>> fa8a085526fe0caaac22ea4e97f2104e50dce2dc
 
     gr.HTML(header_html)
 
